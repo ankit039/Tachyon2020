@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tachyon 2020</title>
+	<meta name="description" content="Blueprint: A basic template for a page stack navigation effect" />
+	<meta name="keywords" content="blueprint, template, html, css, page stack, 3d, perspective, navigation, menu" />
+	<meta name="author" content="Codrops" />
+	<link rel="shortcut icon" href="./images/logo.png">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/demo.css" />
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<link rel="stylesheet" type="text/css" href="css/textflicker.css" />
+	<link href="http://allfont.net/allfont.css?fonts=andromeda" rel="stylesheet" type="text/css" />
+	<script src="js/modernizr-custom.js"></script>
+</head>
+<style type="text/css">
+	@media only screen and (max-width: 768px) {
+		#need{
+		transform: translate3d(0px, 100%, 0px);z-index: 1;opacity: 0.9;height: 850px;top: -200px;
+	}
+	}
+</style>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display&display=swap');
+</style>
+<body>
+	<!-- navigation -->
+	<nav class="pages-nav">
+		<div class="pages-nav__item"><a class="link link--page" href="about.html">About Us</a></div>
+		<div class="pages-nav__item"><a class="link link--page" href="events.html">Events</a></div>
+		<div class="pages-nav__item"><a class="link link--page" href="team.html">Team</a></div>
+		<div class="pages-nav__item"><a class="link link--page" href="sponsors.html">Sponsors</a></div>
+		<div class="pages-nav__item"><a class="link link--page" href="contact.html">Contact Us</a></div>
+		<div class="pages-nav__item"><a class="link link--page" href="hackmap.html">Hack Map</a></div>
+		<div class="pages-nav__item pages-nav__item--small"><a class="link link--page link--faded" href="developers.html">Developed By</a></div>
+		<div class="pages-nav__item pages-nav__item--small"></div>
+		<div class="pages-nav__item pages-nav__item--small"><a class="link link--page link--faded" href="gallery.html">Gallery</a></div>
+		<div class="pages-nav__item pages-nav__item--social">
+			<a class="link link--social link--faded" href="#"><i class="fa fa-instagram"></i><span class="text-hidden">Instagram</span></a>
+			<a class="link link--social link--faded" href="#"><i class="fa fa-facebook"></i><span class="text-hidden">Facebook</span></a>
+		</div>
+	</nav>
+	<!-- /navigation-->
+	<!-- pages stack -->
+	<div class="pages-stack">
+		<!-- page -->
+		<div class="page" id="page-home" >
+			<!-- Blueprint header -->
+			<video autoplay loop="loop" muted class="vid" src="./images/tachyon.mp4" type="video/mp4" style="transform: scale(1.5);"></video>
+			<header class="bp-header cf">
+				<img class="logo" src="./images/logo.png"><h1 class="bp-header__title" style="color: #cfcfcf;">TACHYON</h1>
+				<btx class="text" >
+				  <!--<h1 >
+				    <span class="first">#</span>TC 20<span class="first">20</span>
+				  </h1>-->
+				  <h2>
+				    <span class="first">10<sup>th</sup></span> - <span class="first">12<sup>th</sup></span>April
+				    <h3>Techfest <span class="first">JUET</span> 2020</h3>
+				  </h2>
+				</btx>
+			</header>
+		</div>
+		<!-- /page -->
+		<div class="pagex" id="page-home">
+		</div>
+	</div>
+	<!-- /pages-stack -->
+	<button class="menu-button"><span>Menu</span></button>
+	<script src="js/classie.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>

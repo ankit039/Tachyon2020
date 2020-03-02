@@ -1,0 +1,42 @@
+@import url(https://fonts.googleapis.com/css?family=Sintony:400,700);
+ body {
+	 font-family: 'Sintony', sans-serif;
+}
+ ul {
+	 margin: 0;
+	 padding: 0;
+	 display: flex;
+	 flex-flow: row wrap;
+	 justify-content: space-around;
+	 overflow: hidden;
+}
+ ul li {
+	 list-style: none;
+	 text-align: center;
+	 width: 250px;
+	 transition: all 0.1s ease-in-out;
+}
+ ul li figcaption span {
+	 display: block;
+}
+ ul li figcaption span.name {
+	 font-weight: bold;
+}
+ ul li img {
+	 max-width: 150px;
+	 border-radius: 150px;
+	 border: solid 10px #12d6ff;
+	 transition: all 0.2s ease-in-out;
+}
+ ul li:hover, ul li:focus {
+	 transform: scale(1.1);
+}
+ ul li:hover img, ul li:focus img {
+	 transform: rotate(-5deg);
+	 box-shadow: 0px 0px 5px #666;
+}
+ .logo {
+	 text-align: center;
+	 margin: 1em;
+}
+ 

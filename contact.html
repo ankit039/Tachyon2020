@@ -13,6 +13,7 @@
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/demo.css" />
 	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<link rel="stylesheet" type="text/css" href="css/contact.css" />
 	<script src="js/modernizr-custom.js"></script>
 </head>
 
@@ -41,39 +42,28 @@
 		<!-- page -->
 		<div class="page" id="page-home">
 			<!-- Blueprint header -->
-			<header class="bp-header cf">
-				<span class="bp-header__present">Blueprint <span class="bp-tooltip bp-icon bp-icon--about" data-content="The Blueprints are a collection of basic and minimal website concepts, components, plugins and layouts with minimal style for easy adaption and usage, or simply for inspiration."></span></span>
-				<h1 class="bp-header__title">Page Stack Navigation</h1>
-				<p class="bp-header__desc">Based on Ilya Kostin's Dribbble shot <a href="https://dribbble.com/shots/2286042-Stacked-navigation">Stacked navigation</a></p>
-				<nav class="bp-nav">
-					<a class="bp-nav__item bp-icon bp-icon--prev" href="http://tympanus.net/Blueprints/ZoomSlider/" data-info="previous Blueprint"><span>Previous Blueprint</span></a>
-					<!--a class="bp-nav__item bp-icon bp-icon--next" href="" data-info="next Blueprint"><span>Next Blueprint</span></a-->
-					<a class="bp-nav__item bp-icon bp-icon--drop" href="http://tympanus.net/codrops/?p=25311" data-info="back to the Codrops article"><span>back to the Codrops article</span></a>
-					<a class="bp-nav__item bp-icon bp-icon--archive" href="http://tympanus.net/codrops/category/blueprints/" data-info="Blueprints archive"><span>Go to the archive</span></a>
-				</nav>
-				<p class="info">
-					"We cannot have peace among men whose hearts find delight in killing any living creature." &mdash; Rachel Carson
-				</p>
-			</header>
-			<img class="poster" src="images/1.jpg" alt="img01" />
+		<section class="get-in-touch" >
+		   <h1 class="title">Get in touch</h1>
+		   <form class="contact-form row" style="background: #ffffff;">
+		      <div class="form-field col x-50">
+		         <input id="name" class="input-text js-input" type="text" required>
+		         <label class="label" for="name">Name</label>
+		      </div>
+		      <div class="form-field col x-50">
+		         <input id="email" class="input-text js-input" type="email" required>
+		         <label class="label" for="email">E-mail</label>
+		      </div>
+		      <div class="form-field col x-100">
+		         <input id="message" class="input-text js-input" type="text" required>
+		         <label class="label" for="message">Message</label>
+		      </div>
+		      <div class="form-field col x-100 align-center">
+		         <input class="submit-btn" type="submit" value="Submit">
+		      </div>
+		   </form>
+		</section>
 		</div>
-		<div class="page" id="page-home">
-			<!-- Blueprint header -->
-			<header class="bp-header cf">
-				<span class="bp-header__present">Blueprint <span class="bp-tooltip bp-icon bp-icon--about" data-content="The Blueprints are a collection of basic and minimal website concepts, components, plugins and layouts with minimal style for easy adaption and usage, or simply for inspiration."></span></span>
-				<h1 class="bp-header__title">Page Stack Navigation</h1>
-				<p class="bp-header__desc">Based on Ilya Kostin's Dribbble shot <a href="https://dribbble.com/shots/2286042-Stacked-navigation">Stacked navigation</a></p>
-				<nav class="bp-nav">
-					<a class="bp-nav__item bp-icon bp-icon--prev" href="http://tympanus.net/Blueprints/ZoomSlider/" data-info="previous Blueprint"><span>Previous Blueprint</span></a>
-					<!--a class="bp-nav__item bp-icon bp-icon--next" href="" data-info="next Blueprint"><span>Next Blueprint</span></a-->
-					<a class="bp-nav__item bp-icon bp-icon--drop" href="http://tympanus.net/codrops/?p=25311" data-info="back to the Codrops article"><span>back to the Codrops article</span></a>
-					<a class="bp-nav__item bp-icon bp-icon--archive" href="http://tympanus.net/codrops/category/blueprints/" data-info="Blueprints archive"><span>Go to the archive</span></a>
-				</nav>
-				<p class="info">
-					"We cannot have peace among men whose hearts find delight in killing any living creature." &mdash; Rachel Carson
-				</p>
-			</header>
-			<img class="poster" src="images/1.jpg" alt="img01" />
+		<div class="pagex" id="page-home">
 		</div>
 
 	</div>
@@ -81,6 +71,7 @@
 	<button class="menu-button"><span>Menu</span></button>
 	<script src="js/classie.js"></script>
 	<script src="js/main.js"></script>
+	<script src="js/contact.js"></script>
 </body>
 
 </html>

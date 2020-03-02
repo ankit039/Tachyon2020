@@ -111,12 +111,12 @@ html.js,
 }
 
 .link--faded {
-	color: #4f4f64;
+	color: #5a8a9c;
 }
 
 .link--faded:hover,
 .link--faded:focus {
-	color: #5c5edc;
+	color: #5db3d4;
 }
 
 .link--page.link--faded {
@@ -198,11 +198,18 @@ html.js,
 }
 .text {
 	position: absolute;
-	bottom: 13vh;
-	left: 35%;
+	bottom: 4vh;
+	left: 40%;
+	max-width: 100%;
+	max-height: 100%;
+}
+	.posterdown {
+	position: absolute;
+	bottom: 4vh;
+	left: 60%;
 	max-width: 100%;
 	max-height: 80%;
-}
+	}
 @media only screen and (max-width: 768px) {
 	.text {
 		position: absolute;
@@ -218,6 +225,49 @@ html.js,
 		max-width: 100%;
 		max-height: 80%;
 		margin-bottom: 100px;
+	}
+	.js .page {
+	position: relative;
+	z-index: 5;
+	overflow: hidden;
+	width: 100%;
+	height: 100vh;
+	pointer-events: auto;
+	background: #2a2b30;
+	box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.1);
+}
+	.js .pagehome {
+	position: relative;
+	z-index: 5;
+	overflow: hidden;
+	width: 100%;
+	height: 100vh;
+	pointer-events: auto;
+	background: #2a2b30;
+	box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.1);
+}
+.js .pages-stack {
+	z-index: 100;
+	pointer-events: none;
+	-webkit-perspective: 600px;
+	perspective: 600px;
+	-webkit-perspective-origin: 50% -50%;
+	perspective-origin: 50% -50%;
+}
+.text {
+	position: absolute;
+	bottom: 10vh;
+	left: 18%;
+	max-width: 100%;
+	max-height: 100%;
+}
+	.posterdown {
+		position: absolute;
+		top: 70%;
+		bottom: 4vh;
+		height: 200px;
+		width: 200px;
+		left: 25%;
 	}
 }
 .logo {
